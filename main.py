@@ -25,7 +25,3 @@ if f == 1:
 elif f == 2:
     f = open("coords_generated.txt", 'w')
     f.close()
-
-
-
-
