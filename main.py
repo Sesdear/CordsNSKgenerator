@@ -19,9 +19,11 @@ if f == 1:
         stop_count = stop_count + 1
         with open('coords_generated.txt', 'a') as f:
             cords_writes = f.writelines(f"{generated}\n")
+            write = f.writelines(f"https://yandex.ru/maps/65/novosibirsk/?ll={y}%2C{x}&mode=whatshere&whatshere%5Bpoint%5D={y}%2C{x}&text={x}%2C{y}&whatshere%5Bzoom%5D=12&z=12.95\n")
         f.close()
         if stop == stop_count:
             break
 elif f == 2:
     f = open("coords_generated.txt", 'w')
     f.close()
+
